@@ -1,0 +1,39 @@
+version: '3.9'
+
+services:
+  postgres:
+    image: postgres
+    env_file:
+      - .env
+    container_name: ${POSTGRES_DOCKER_NAME:-postgres}
+    ports:
+      - 5432:5432
+    volumes:
+      - ${POSTGRES_VOLUME_DIR:-/DockerVolumes/postgres}:/var/lib/postgresql/data
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-postgres}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-Connect123}
+      POSTGRES_DB: ${POSTGRES_DB:-myDB}
+    restart: unless-stopped
+  redis-stack:
+    image: redis/redis-stack:latest
+    container_name: redis-stack
+    ports:
+      - "6379:6379"
+      - "8001:8001"
+    restart: unless-stopped
+
+
+#! you must set the postgres password manually in the container terminal!:
+#: su - postgres -c 'psql'
+#: \password postgres
+# enter password twice
+
+#create the database:
+
+
+
+
+# networks:
+#   mongo-database:
+#     driver: bridge

@@ -1,0 +1,1 @@
+create index idx_BTREE_users_email on users (email);

@@ -1,0 +1,11 @@
+
+
+
+when using ts for modules you need to compile the files to js (like with this project that uses node/express server):
+this resolves the syntax error :/SyntaxError: Cannot use import statement outside a module ts.
+
+
+run tsc --init to create tsconfig.json file.
+
+run ctrl+shift+b the select tsc:watch [folderPath/tsconfig.ts] - this will compile the ts files to js files.
+

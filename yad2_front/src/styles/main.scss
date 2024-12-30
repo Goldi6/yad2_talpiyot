@@ -1,0 +1,40 @@
+@import url("./colorClasses.scss");
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.flex-column {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hide-on-tablet {
+  @media (max-width: 880px) {
+    display: none !important;
+  }
+}
+.hide-on-desktop {
+  @media (min-width: 881px) {
+    display: none;
+  }
+}
+
+button,
+a {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}

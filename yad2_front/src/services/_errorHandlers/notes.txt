@@ -1,0 +1,71 @@
+400 Bad Request: Used for more general client-side errors, including malformed syntax, invalid parameters, or incomplete requests. It covers a broad range of client errors, including some cases of data validation issues.
+
+
+Malformed Syntax: Requests with incorrect syntax, such as incorrectly formatted JSON/XML or incorrectly structured request bodies.
+
+Invalid Request Parameters: Requests containing invalid or missing parameters, query strings, or URL parameters.
+
+Incorrect Request Method: Using an inappropriate or unsupported HTTP method for a particular endpoint or resource.
+
+Invalid Content-Type Header: Requests with unsupported or missing content types in the header.
+
+Missing Required Fields: Incomplete requests that lack necessary fields or parameters.
+
+Data Type Mismatch: Providing data in a format that does not match the expected data type.
+
+Size Limit Exceeded: Requests exceeding size limitations defined by the server.
+
+Generic Client-Side Errors: Any other client-side errors that prevent the server from understanding or processing the request properly, which might be related to data validation issues.
+
+
+
+422 Unprocessable Entity: Specifically used when there are semantic errors within the request payload, such as data validation failures, missing fields, or format issues. It's more specific to indicating that the server understands the request but encounters semantic issues with the data.
+
+
+400:
+
+
+Email already exists in the database (during registration).
+Invalid request parameters: When the request parameters are incorrectly formatted or missing required fields during authentication or data processing.
+
+Malformed request body: Occurs when the request body structure does not match the expected format or schema.
+
+Invalid input format for data manipulation: For example, providing an invalid date format for a date field or an unsupported data type.
+
+Data validation errors: Input data fails specific validation criteria during registration, user profile updates, or other data-related operations.
+
+Invalid URL parameters: Requesting data or performing an action using incorrect or improperly formatted URL parameters.
+
+401:
+
+Wrong login credentials provided.
+Access requires authentication (user needs to be logged in).
+Session expired or token invalidated.
+Attempted access to restricted content without proper authorization.
+Invalid or expired authentication token.
+
+403:
+Accessing someone else's private data without proper permissions.
+Trying to modify someone else's data without authorization.
+Access denied due to user role permissions.
+404:
+
+Page not found.
+Incorrect API path provided.
+
+409: conflict
+* user attempts to register with an email that already exists in the database.
+
+422:
+
+Wrong or missing input fields in the request.
+Invalid data format provided during an update or create operation.
+Attempting to process incomplete or malformed data.
+
+500:
+
+An unexpected server error occurred during data processing.
+Failure during database transaction or data manipulation.
+
+
+Server encountered an internal error and failed to process the request.

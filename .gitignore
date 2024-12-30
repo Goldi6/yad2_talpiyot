@@ -7,8 +7,8 @@ NOTTTTEEE
 **/*.env
 email
 PRIV
-*.jpg
-assets
+
+
 README copy.md
 **/*(copy).*
 **/*copy.*

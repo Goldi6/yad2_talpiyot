@@ -1,0 +1,93 @@
+
+@keyframes disable-scroll_popModal__gCn5j {
+    0% {
+        opacity: 0;
+        transform: scale(.8)
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1)
+    }
+}
+
+@keyframes disable-scroll_slideRight__CABH1 {
+    0% {
+        right: -315px
+    }
+
+    to {
+        right: 0
+    }
+}
+
+@keyframes disable-scroll_slideLeft__P6alg {
+    0% {
+        left: -100%
+    }
+
+    to {
+        left: 0
+    }
+}
+
+@keyframes disable-scroll_bottomModal__uVbsV {
+    0% {
+        bottom: -100%
+    }
+
+    to {
+        bottom: 0
+    }
+}
+
+@media screen and (max-width: 880px) {
+    .disable-scroll_disable-scroll-on-mobile__pJIO9 {
+        overflow:hidden;
+        touch-action: none;
+        -webkit-overflow-scrolling: none;
+        overscroll-behavior: none
+    }
+}
+
+@keyframes responsive-header-grid_popModal__7OxNu {
+    0% {
+        opacity: 0;
+        transform: scale(.8)
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1)
+    }
+}
+
+@keyframes responsive-header-grid_slideRight__ouKb2 {
+    0% {
+        right: -315px
+    }
+
+    to {
+        right: 0
+    }
+}
+
+@keyframes responsive-header-grid_slideLeft__XTh2G {
+    0% {
+        left: -100%
+    }
+
+    to {
+        left: 0
+    }
+}
+
+@keyframes responsive-header-grid_bottomModal__k38eI {
+    0% {
+        bottom: -100%
+    }
+
+    to {
+        bottom: 0
+    }
+}
